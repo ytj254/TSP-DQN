@@ -1,0 +1,7 @@
+<configuration>
+    <input>
+        <net-file value="optEastway-Central.net.xml" />
+        <route-files value="Eastway-Central-conflict.rou.xml" />
+        <additional-files value="Eastway-Central.add.xml" />
+    </input>
+</configuration>

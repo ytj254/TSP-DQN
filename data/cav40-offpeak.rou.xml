@@ -1,0 +1,54 @@
+<routes>
+    <vType id="car" carFollowModel="IDM" vClass="passenger"/>
+    <vType id="cv" carFollowModel="IDM" vClass="passenger" color="0,1,1"/>
+    <vType id="bus" carFollowModel="IDM" vClass="bus" color="0,1,0"/>
+<!--    <vType id="av" carFollowModel="IDM" vClass="passenger" color="0,1,1" tau="0.9"/>-->
+
+
+    <flow id="NW" begin="0" end="4500" probability="0.024" from="E1" to="-E0" departSpeed="max" type="car" departLane="best" depart="0"/>
+        <flow id="NW.cv" begin="0" end="4500" probability="0.016" from="E1" to="-E0" departSpeed="max" type="cv" departLane="best" depart="0"/>
+
+    <flow id="NS" begin="0" end="4500" probability="0.12" from="E1" to="E3" departSpeed="max" type="car" departLane="best" depart="0"/>
+        <flow id="NS.cv" begin="0" end="4500" probability="0.08" from="E1" to="E3" departSpeed="max" type="cv" departLane="best" depart="0"/>
+
+    <flow id="NE" begin="0" end="4500" probability="0.006" from="E1" to="E2" departSpeed="max" type="car" departLane="best" depart="0"/>
+        <flow id="NE.cv" begin="0" end="4500" probability="0.004" from="E1" to="E2" departSpeed="max" type="cv" departLane="best" depart="0"/>
+
+
+    <flow id="EN" begin="0" end="4500" probability="0.006" from="-E2" to="-E1" departSpeed="max" type="car" departLane="best" depart="0"/>
+        <flow id="EN.cv" begin="0" end="4500" probability="0.004" from="-E2" to="-E1" departSpeed="max" type="cv" departLane="best" depart="0"/>
+
+    <flow id="EW" begin="0" end="4500" probability="0.054" from="-E2" to="-E0" departSpeed="max" type="car" departLane="best" depart="0"/>
+        <flow id="EW.cv" begin="0" end="4500" probability="0.036" from="-E2" to="-E0" departSpeed="max" type="cv" departLane="best" depart="0"/>
+
+    <flow id="ES" begin="0" end="4500" probability="0.042" from="-E2" to="E3" departSpeed="max" type="car" departLane="best" depart="0"/>
+        <flow id="ES.cv" begin="0" end="4500" probability="0.028" from="-E2" to="E3" departSpeed="max" type="cv" departLane="best" depart="0"/>
+
+
+    <flow id="SE" begin="0" end="4500" probability="0.018" from="-E3" to="E2" departSpeed="max" type="car" departLane="best" depart="0"/>
+        <flow id="SE.cv" begin="0" end="4500" probability="0.012" from="-E3" to="E2" departSpeed="max" type="cv" departLane="best" depart="0"/>
+
+    <flow id="SN" begin="0" end="4500" probability="0.09" from="-E3" to="-E1" departSpeed="max" type="car" departLane="best" depart="0"/>
+        <flow id="SN.cv" begin="0" end="4500" probability="0.06" from="-E3" to="-E1" departSpeed="max" type="cv" departLane="best" depart="0"/>
+
+    <flow id="SW" begin="0" end="4500" probability="0.024" from="-E3" to="-E0" departSpeed="max" type="car" departLane="best" depart="0"/>
+        <flow id="SW.cv" begin="0" end="4500" probability="0.016" from="-E3" to="-E0" departSpeed="max" type="cv" departLane="best" depart="0"/>
+
+
+    <flow id="WS" begin="0" end="4500" probability="0.024" from="E0" to="E3"   departSpeed="max" type="car" departLane="best" depart="0"/>
+        <flow id="WS.cv" begin="0" end="4500" probability="0.016" from="E0" to="E3"   departSpeed="max" type="cv" departLane="best" depart="0"/>
+
+    <flow id="WE" begin="0" end="4500" probability="0.03" from="E0" to="E2" departSpeed="max" type="car" departLane="best" depart="0"/>
+        <flow id="WE.cv" begin="0" end="4500" probability="0.02" from="E0" to="E2" departSpeed="max" type="cv" departLane="best" depart="0"/>
+
+    <flow id="WN" begin="0" end="4500" probability="0.018" from="E0" to="-E1" departSpeed="max" type="car" departLane="best" depart="0"/>
+        <flow id="WN.cv" begin="0" end="4500" probability="0.012" from="E0" to="-E1" departSpeed="max" type="cv" departLane="best" depart="0"/>
+
+
+    <flow id="BNS" begin="0" end="4500" period="300" from="E1" to="E3" departSpeed="max" type="bus" departLane="best" depart="0"/>
+    <flow id="BSN" begin="120" end="4500" period="300" from="-E3" to="-E1" departSpeed="max" type="bus" departLane="best" depart="0"/>
+
+</routes>
+
+
+

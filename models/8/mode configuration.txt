@@ -1,0 +1,37 @@
+# PyTorch #
+Structure:
+3 cnn
+	self.conv1 = nn.Conv2d(2, 32, kernel_size=(2, 4), stride=(1, 2))  # output shape (32, 49, 7)
+        self.conv2 = nn.Conv2d(32, 32, kernel_size=(2, 3), stride=(1, 2))  # output shape (32, 48, 3)
+        self.conv3 = nn.Conv2d(32, 32, kernel_size=(2, 2), stride=(1, 1))  # output shape (32, 47, 2)
+3 fc
+        self.fc1 = nn.Linear(32*47*2, 128)
+        self.fc2 = nn.Linear(128, 64)
+        self.fc3 = nn.Linear(64, n_actions)
+
+learnint rate = 0.001
+batch size = 32
+memory size = 50000
+gamma = 0.65
+update interval = 50
+cell length = 7
+detection length = 350
+lane number = 16
+total episode = 1000
+test iteration = 50
+training epochs = 100
+
+self.max_epsilon = 0.9
+self.min_epsilon = 0.01
+self.epsilon_decay = -0.1
+epsilon = self.min_epsilon + (self.max_epsilon - self.min_epsilon) * np.exp(self.epsilon_decay * episode)
+
+route-files value="Eastway-Central.rou.xml"
+
+Input shape: 2*50*16
+
+Reward metrics：person time loss
+car_occupancy = 1.5
+bus_occupancy = 30
+
+Training time: 6 hours and 20 minutes
