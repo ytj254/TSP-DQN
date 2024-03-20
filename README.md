@@ -1,5 +1,6 @@
 # TSP-DQN
-Code for paper "Equity-Based Traffic Signal Control under Connected Vehicle Environment: Deep Reinforcement Learning Approach"
+Code for paper "Transit Signal Priority under Connected Vehicle Environment: Deep Reinforcement Learning Approach"
+https://doi.org/10.1080/15472450.2024.2324385
 ## Important Requirements
 Python==3.9\
 numpy==1.23.5\
