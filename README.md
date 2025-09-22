@@ -19,5 +19,5 @@ If you use this framework in your research, please cite:
 
 > Yang, T., & Fan, W. (2025).  
 > Transit signal priority under connected vehicle environment: Deep reinforcement learning approach.  
-> *Journal of Intelligent Transportation Systems,* 29(5), 505-517.
+> *Journal of Intelligent Transportation Systems,* 29(5), 505-517.  
 > [https://doi.org/10.1080/15472450.2024.2324385](https://doi.org/10.1080/15472450.2024.2324385)
